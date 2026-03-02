@@ -1,0 +1,256 @@
+/* header */
+.menubtn{
+    display: none;
+}
+.wbmenu{
+    display: flex;
+    gap: 30px;
+}
+.mobilemenu{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 60px;
+    padding: 0 40px;
+    background: white;
+    row-gap: 10px;
+}
+.mobilemenu li:hover{
+    background: blue;
+}
+.mobilemenu li:hover a{
+    color: white;
+}
+
+
+@media screen and (max-width: 900px){
+   .menubtn{
+    display: block;
+    border: none;
+   }
+   .wbmenu{
+    display: none;
+   }
+}
+
+/* cards */
+.blog-card,
+.menu-card{
+    text-align: center;
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+.cardbtn h2{
+    background: rgb(12, 2, 107);
+    color: white;
+    border-radius: 10px;
+    display: inline-block;
+    padding: 0 30px;
+    margin-bottom: 20px;
+}
+.cardbtn h2:hover{
+    background: rgba(0, 0, 0, 0.69);
+}
+.card-body img{
+    width: 250px;
+    height: 280px
+}
+
+/* call-action */
+.call-action{
+    text-align: center;
+    background: #99e54d;
+    padding: 5% 10%;
+}
+.call-action h2:hover{
+    color: rgba(0, 0, 0, 0.585);
+}
+.email-action{
+    text-align: center;
+    background: #f1ae0e;
+    padding: 5% 10%;
+}
+.email-action button{
+    background: #f1ae0e;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    box-shadow:  0 0 2px 2px rgba(0, 0, 0, 0.461);
+}
+
+/* contact-card */
+.contact-card{
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(50% ,1fr));
+    background: white;
+}
+.btn a{
+    background: #f1ae0e;
+    color: white;
+    padding: 15px 30px ;
+    text-decoration: none;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.699);
+}
+.btn a:hover{
+    background: rgb(238, 15, 15)
+}
+
+/* footer */
+/* header, */
+.footer {
+  background: #0f172a; /* Dark navy */
+  color: #f1f5f9;
+  padding: 60px 10%;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 40px;
+}
+
+.footer-section h2,
+.footer-section h3 {
+  color: #22c55e; /* Green accent */
+  margin-bottom: 15px;
+}
+
+.footer-section p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #cbd5e1;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  text-decoration: none;
+  color: #cbd5e1;
+  transition: 0.3s;
+}
+
+.footer-section ul li a:hover {
+  color: #22c55e;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  border-top: 1px solid #1e293b;
+  padding-top: 20px;
+  font-size: 14px;
+  color: #94a3b8;
+}
+
+/* text-bannar */
+.text-bannar{
+    background-color: #99e54d;
+    color: black;
+    text-align: center;
+    padding: 10%;
+}
+.text-bannar h2,h4,h1,p{
+    margin-bottom: 20px;
+}
+.bg-1{
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(48% ,1fr));
+    background: white;
+}
+
+/* about-card */
+.about-card{
+    background-color: white;
+    padding: 50px 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit ,minmax(50%,1fr));
+}
+
+    .food-container{
+        display: flex;
+        gap: 50px;
+    }
+
+@media screen and (max-width: 920px){
+    .food-container,
+    .about-card,
+    .contact-card,
+    .bg-1{
+        display: flex;
+        flex-direction: column !important ;
+        width: 100%;
+    }
+}
+
+.story-bannar{
+    display: grid;
+    grid-template-columns: repeat(auto-fit ,minmax(300px,1fr));
+    background: white;
+    padding: 20px 0;
+}
+
+/* team */
+.team{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 50px;
+}
+.team-member{
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    background: white;
+    overflow: hidden;
+}
+.team-member img{
+    height: 414px;
+    width: 360px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+.social-midea a{
+    font-size: 30px;
+    text-decoration: none;
+}
+@media screen and (max-width: 750px) {
+    .team{
+        display: flex;
+        flex-direction: column;
+        width: 100%
+    }
+}
+/* user-form */
+.user-form{
+    padding: 50px;
+    background: white;
+    text-align: center;
+}
+.user-form input{
+    margin: 10px 0;
+    width: 50%;
+    padding: 10px;
+    border-radius: 20px;
+}
+.user-form textarea{
+    width: 50%;
+    padding: 10px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+.user-form button{
+    background-color: #99e54d;
+    padding: 10px 40px;
+}
